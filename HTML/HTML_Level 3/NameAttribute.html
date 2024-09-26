@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name attribute in Forms</title>
+  </head>
+  <body>
+    <h2>Using Name attribute</h2>
+    <form action="/server">
+      <!-- INPUT-(Form element)-->
+      <div>
+        <label for="username">Username : </label>
+        <!--By using name attribute we give access to backend -->
+        <input
+          type="text"
+          placeholder="enter username"
+          id="username"
+          name="user"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password : </label>
+        <!--pass atribute is not safe because anyone see my password but 
+        when we learn https protocol/ server we are hide our password-->
+        <input
+          type="password"
+          placeholder="enter password"
+          id="password"
+          name="pass"
+        />
+      </div>
+      <button>Submit</button>
+    </form>
+    <hr />
+    <h2>Search In youtube</h2>
+    <form action="https://www.youtube.com/results?search_query=isro">
+      <input type="text" placeholder="Search in Youtube" name="search_query" />
+      <!-- name="search_query" is used because it was the actual url of youtube-->
+      <button>search</button>
+    </form>
+  </body>
+</html>

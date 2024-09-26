@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Range select-form</title>
+  </head>
+  <body>
+    <h2>Range-input Select in Forms</h2>
+    <form action="/server">
+      <div>
+        <label for="volume">select your volume level</label>
+        <input
+          type="range"
+          id="volume"
+          name="volume"
+          min="0"
+          max="100"
+          step="10"
+        /><!--by using step="10" volume incresed by 10,20,30-->
+      </div>
+      <button>submit</button>
+    </form>
+  </body>
+</html>

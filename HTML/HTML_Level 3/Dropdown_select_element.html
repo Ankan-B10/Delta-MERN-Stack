@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown select</title>
+  </head>
+  <body>
+    Dropdown-select in forms
+    <form action="/server">
+      <div>
+        Choose your profession
+        <select name="profession" id="profession">
+          <option value="stu">student</option>
+          <option value="dev" selected>developer</option>
+          <option value="tec">teacher</option>
+        </select>
+        <!--By using selected, dropbox shows selected part in web page as pre-selected -->
+      </div>
+      <div>
+        Choose your dream company
+        <select name="company" id="company">
+          <option value="google" selected>google</option>
+          <option value="microsoft">microsoft</option>
+          <option value="amazon">amazon</option>
+          <option value="adobe">adobe</option>
+          <option value="uber">uber</option>
+        </select>
+      </div>
+      <button>submit</button>
+    </form>
+  </body>
+</html>

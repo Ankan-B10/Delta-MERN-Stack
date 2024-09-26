@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level 3 Assigment Qs 2</title>
+  </head>
+  <body>
+    <h2>Recreate the following table using HTML :</h2>
+    <form action="/server">
+      <div>
+        <label for="name">Name : </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="enter your name"
+        />
+      </div>
+      <br />
+      <div>
+        Sex:
+        <input type="radio" id="male" name="sex" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="female" />
+        <label for="female">Female</label>
+      </div>
+      <br />
+      <div>
+        <label for="country">Country :</label>
+        <select name="country" id="country">
+          <option selected>Select an option</option>
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+          <option value="spain">Spain</option>
+          <option value="canada">Canada</option>
+          <option value="nepal">Nepal</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="feedback">Message : </label>
+        <br />
+        <textarea
+          name="feedback"
+          id="feedback"
+          cols="50"
+          rows="10"
+          placeholder="enter your message"
+        ></textarea>
+      </div>
+      <div>
+        <input type="checkbox" name="subs" id="subs" />
+        <label for="subs">Subscribe?</label>
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

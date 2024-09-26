@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Button</title>
+  </head>
+  <body>
+    <form action="/server">
+      <!--By using name="fruit" in all input we only select one fruit
+            value attribute are different so, backend knows about the selected fruit-->
+      <div>
+        <input type="radio" name="fruit" id="apple" value="apple" />
+        <label for="apple">Apple</label>
+        <input type="radio" name="fruit" id="mango" value="mango" />
+        <label for="mango">Mango</label>
+        <input type="radio" name="fruit" id="banana" value="banana" />
+        <label for="banana">Banana</label>
+      </div>
+      <br />
+      Choose your subjects by radio button :
+      <div>
+        <input type="radio" name="math" id="math" />
+        <label for="math">Mathematics</label>
+        <br />
+        <input type="radio" name="science" id="science" />
+        <label for="science">Science</label>
+        <br />
+        <input type="radio" name="english" id="english" />
+        <label for="english">English</label>
+      </div>
+      <br />
+      Choose your subjects by checkbox button :
+      <div>
+        <input type="checkbox" id="math" name="sub" value="math" />
+        <label for="math">Mathematics</label>
+        <br />
+        <input type="checkbox" id="science" name="sub" value="sci" />
+        <label for="science">Science</label>
+        <br />
+        <input type="checkbox" id="english" name="sub" value="eng" />
+        <label for="english">English</label>
+      </div>
+      <button>submit</button>
+      <button type="reset">reset</button>
+    </form>
+  </body>
+</html>
