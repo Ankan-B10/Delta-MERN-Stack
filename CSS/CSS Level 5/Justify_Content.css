@@ -1,0 +1,57 @@
+/* * Justify Content -->
+        justify-content: flex-end;  
+        justify-content: flex-start;  
+        justify-content: center;          */
+#container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex; /* Default flex -> Row wise*/
+  flex-direction: column-reverse; /*bottom to top */
+  justify-content: flex-end;
+  /* flex-end => top to bottom for column reverse
+     flex-start => bottom to top for column reverse  */
+  justify-content: center; /* to make content into middle of main section*/
+}
+
+h1 {
+  text-align: center;
+}
+
+#container div {
+  height: 20px;
+  width: 100px; /* div not get 500px width Because of flex only saw according to outer box width */
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* *  Space in Justify Content 
+        justify-content: space-between; 
+        justify-content: space-around; 
+        justify-content: space-evenly; */
+#space {
+  height: 300px;
+  width: 80%;
+  background-color: beige;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex; /* Default flex -> Row wise*/
+  flex-direction: row;
+  justify-content: space-between; /* middle space distribute equaly*/
+  justify-content: space-evenly; /*Space distribute equally for every position */
+}
+
+h1 {
+  text-align: center;
+}
+
+#space div {
+  height: 100px;
+  width: 100px; /* div not get 500px width Because of flex only saw according to outer box width */
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}

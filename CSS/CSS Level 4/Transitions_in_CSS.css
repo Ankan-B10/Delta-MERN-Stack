@@ -1,0 +1,16 @@
+/* * Transition Shorthand -->
+       transition: margin-top 2s ease-in-out 0.2s; => ( transition-duration | delay | property name | timing-function )   
+ */
+div {
+  height: 100px;
+  width: 100px;
+  background-color: greenyellow;
+  margin: 0 auto;  /* Short form to make the object in middle */
+  margin-top: 10px;
+  transition: margin-top 2s ease-in-out 0.2s;
+}
+
+div:hover {
+     margin-top: 400px;
+     background-color: pink;
+}

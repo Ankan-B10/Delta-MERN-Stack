@@ -1,0 +1,109 @@
+/* *  Flex Shorthand --.
+        1. flex: 2 2 100px; => (flex-grow | flex-shrink | flex-basis)
+        2. flex: 2 100px; => (flex-grow | flex-basis)
+        3. flex: 2; => flex-grow (unitless)
+        4. flex: 100px; => flex-basis       */
+/* flex-basis -->
+       it sets the initial main size of a flex item. */
+#container {
+  height: 600px;
+  width: 80%;
+  background-color: azure;
+  border: 2px solid black;
+  margin: 10px auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+h2 {
+  text-align: center;
+}
+#blue1 {
+  flex-basis: 400px;
+}
+#orange1 {
+  align-self: flex-start; /* only work as indivisual */
+  flex-basis: 50px;
+  height: 300px;
+}
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* flex-basis --> unit less
+     it specifies how much flex containers remaining space to the main size
+*/
+#grow {
+  height: 400px;
+  width: 80%;
+  background-color: azure;
+  border: 2px solid black;
+  margin: 10px auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* align-items: baseline; */
+  align-content: flex-start;
+}
+h2 {
+  text-align: center;
+}
+#blue2 {
+  flex-grow: 2;
+  /* Avaliable space, When scroll or resize */
+  min-width: 400px;
+  max-width: 600px;
+}
+#orange2 {
+  align-self: flex-start; /* only work as indivisual */
+  flex-grow: 1;
+}
+
+#grow div {
+  height: 100px;
+  width: 50px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* flex-shrink
+        it sets the flex shrink factor of a flex item */
+#shrink {
+  height: 400px;
+  width: 50%;
+  background-color: azure;
+  border: 2px solid black;
+  margin: 10px auto;
+  display: flex;
+  justify-content: flex-start;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  /* align-items: baseline; */
+  align-content: flex-start;
+}
+h2 {
+  text-align: center;
+}
+#blue3 {
+  flex-shrink: 3;
+}
+#orange3 {
+  align-self: flex-start; /* only work as indivisual */
+  flex-shrink: 1;
+}
+
+#shrink div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}

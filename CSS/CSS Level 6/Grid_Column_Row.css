@@ -1,0 +1,35 @@
+.container{
+    height: 300px;
+    width: 600px;
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px 30px;
+}
+.item {
+   /* width: 100px; */
+   /* height: 50px; */
+   background-color: greenyellow;
+   border: 2px solid black;
+   text-align: center;
+}
+/* * Grid columns
+       Define an items starting & ending position inside the column          
+         grid-column-start: line_numbrr;
+    grid-column-end: line_numbeer;   
+      grid-column: 1 / 4; =>(start_col / end_col)
+      grid-column: 1 / span3; => ( start_col / span number )     */
+.one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* grid-column: 1 / 4;
+    grid-column: 1/ span3 ; */
+}
+
+.two {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  /* grid-row: 1 / 4;
+  grid-row: 1/ span3 ; */
+}

@@ -1,0 +1,16 @@
+/* background-image:-
+       background-image: url("...something.jpg");
+to make background image as shape :-
+        background-size: contain => not crop,not scal but repeat
+        background-size: cover  => to make image as cover
+        background-size:  auto  => stretch the image   */
+
+div {
+    width: 400px;
+    height: 200px;
+    background-color: pink;
+    margin: 10px auto;
+    background-image: url(Background_image.jpg);
+    background-size: cover;
+    color: white;
+}

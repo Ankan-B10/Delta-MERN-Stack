@@ -1,0 +1,49 @@
+div {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  text-align: center;
+  border: 3px solid black;
+  margin: 20px;
+  display: inline-block;
+}
+
+/* Static Position -->
+       The top, right, bottom, left and z-index properties have no effect.
+       This is the default value.           */
+#static {
+  background-color: yellow;
+  position: static; /* for static, nothing changed in position */
+  top: 100px;
+  left: 100px;
+}
+
+/* Relative Position -->
+       the offset is relative to itself based on the values of top, right, bottom and left. */
+#relative {
+  background-color: yellow;
+  position: relative; /* change the position */
+  top: 100px;
+  left: 100px;
+}
+
+/* Absolute Position -->
+    It is positioned relative to its closest positioned ancestor. if any
+    otherwise, it is placed relative to the initial containing block.  */
+#absolute {
+    background-color: yellow;
+    position: absolute; /* change the position according to the parent*/
+    top: 100px;
+    left: 100px;
+}
+
+/* Fixed Position
+     element is removed from normal document flow, and no space is created
+     It is positioned relative to the initial containing block established by the viewport
+*/
+#fixed {
+    background-color: yellow;
+    position: fixed; /* fixed the position according to the parent, so when scrol box is always stay same place*/
+    top: 100px;
+    left: 100px;
+}

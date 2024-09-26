@@ -1,0 +1,27 @@
+a {
+  text-decoration: none;
+  /* none removed the underline of anchor tag */
+  color: palevioletred;
+  font-weight: bold;
+}
+h1 {
+  text-align: center;
+  text-decoration: wavy red underline;
+  letter-spacing: 5px;
+}
+
+h2 {
+  text-align: center;
+  /* font-weight 100-400=normal , 800/900=bold */
+  font-weight: 800;
+}
+h3 {
+  text-decoration: dotted green underline;
+}
+p {
+  line-height: 1.5;
+  /* 1.5 = 1.5*normal height
+  3.0 = 3.0*normal height */
+  letter-spacing: 3px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}

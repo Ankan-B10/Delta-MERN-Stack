@@ -1,0 +1,31 @@
+/* Qs 1 --> */
+#box {
+  height: 150px;
+  width: 300px;
+  background-color: grey;
+  border: 5px dotted black;
+  margin-top: 20px;
+  margin-right: 1em;
+  margin-bottom: 40px;
+  margin-left: 2em;
+  padding: 1em;
+}
+/* Qs 2 --> */
+.inner {
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+  border: 2px solid black;
+  display: inline-block;
+  border-radius: 50%;
+}
+/* Qs 3 --> */
+li {
+  display: inline;
+}
+/*      Qs 4 --> 
+    Li(list items) have their display property set to “list-item” by 
+    default which makes them a bulleted list item. 
+    When this property is reset by you to “inline”, 
+    then the bullet points also disappear.Inaway, 
+    we override the default settings with our CSS.         */

@@ -1,0 +1,41 @@
+/* *    em & rem
+               em is used to calculate relative to parent element
+               rem is used to calculate relative to Root element  */
+
+#outer {
+  height: 400px;
+  width: 400px;
+  background-color: pink;
+  border: 2px solid black;
+  font-size: 20px;
+}
+#inner {
+  height: 100px;
+  width: 100px;
+  background-color: cornflowerblue;
+  margin-left: 10%;
+  font-size: 2em; /* now 2em = 2*20px = 40px */
+  padding: 2em;
+}
+button {
+  font-size: 50px;
+  border-radius: 15px;
+  border: 5px solid green;
+  padding: 0em 1em 0em 1em;
+}
+
+/* * Snowball effect IN em */
+/* section {
+  font-size: 10px;
+}
+div{
+  font-size: 2em;
+} */
+
+/* So, for em solution we have rem => Root element */
+section {
+  font-size: 25px;
+}
+div {
+  font-size: 2rem;
+}

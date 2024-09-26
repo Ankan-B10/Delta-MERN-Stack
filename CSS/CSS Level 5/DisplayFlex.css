@@ -1,0 +1,60 @@
+#container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex; /* Default flex -> Row wise*/
+  flex-direction: column;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 500px; /* div not get 500px width Because of flex only saw according to outer box width */
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Flexbox direction --->
+    1. flexbox-direction: row; => main axis,left to right
+    2. flexbox-direction: row-inverse; => main axis,right to left
+    3. flexbox-direction: column; => main axis,top to bottom
+    4. flexbox-direction: column-reverse; => main axis,bottom to top
+*/
+#reverseCol {
+  height: 300px;
+  width: 80%;
+  background-color: black;
+  margin: 10px auto;
+  border: 2px solid wheat;
+  display: flex; /* Default flex -> Row wise*/
+  flex-direction: column-reverse;
+}
+#reverseCol div {
+  height: 100px;
+  width: 100px;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Flexbox-reverse Row wise */
+#reverseRow {
+  height: 300px;
+  width: 80%;
+  background-color: antiquewhite;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex; /* Default flex -> Row wise*/
+  flex-direction: row-reverse;
+}
+#reverseRow div {
+  height: 200px;
+  width: 100px;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}

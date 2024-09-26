@@ -1,0 +1,30 @@
+/* Align Self --> indivisual
+       align-self: flex-start;
+       align-self: flex-end;
+       align-self: centerl;
+       align-self: baseline;
+        */
+#container {
+  height: 400px;
+  width: 80%;
+  background-color: azure;
+  border: 2px solid black;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+h1 {
+  text-align: center;
+}
+#orange {
+  align-self: flex-end; /* only work as indivisual */
+}
+
+#container div {
+  height: 100px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}

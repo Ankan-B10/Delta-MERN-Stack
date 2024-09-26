@@ -1,0 +1,24 @@
+/* Grid Gaps
+       they define the gaps between the lines
+             row-gap: 10px;
+             column-gap: 10px;
+             grid-gap: 10px 10px; ==> (rowGap columnGap) */
+.container{
+    height: 300px;
+    width: 600px;
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    /* shorthand method */
+    grid-gap: 10px 30px;
+}
+.item {
+   /* width: 100px; */
+   height: 50px;
+   background-color: greenyellow;
+   border: 2px solid black;
+   text-align: center;
+}

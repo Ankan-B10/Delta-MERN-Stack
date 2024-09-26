@@ -1,0 +1,18 @@
+/* CSS grid -->
+      container{
+          display: grid;
+            }                       */
+.container {
+  width: 600px;
+  height: 300px;
+  background-color: black;
+  display: flex; /* Default it works as row wise*/
+  display: grid; /* Default it works as column wise */
+}
+.item {
+  width: 100px;
+  height: 50px;
+  background-color: pink;
+  border: 2px solid black;
+  text-align: center;
+}

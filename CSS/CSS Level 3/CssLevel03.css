@@ -1,0 +1,68 @@
+/*      Height & Width      */
+.para {
+  height: 200px;
+  width: 500px;
+  background-color: pink;
+  border: 5px solid greenyellow;
+  border-left-color: blue;
+  border-left-style: dashed;
+  border-radius: 20px;
+  padding: 30px;
+  /* border-top-right-radius: 25px; */
+  margin-bottom: 20px ;
+  margin-left: 15px;
+}
+
+/* * Border
+      Used to set an element's border
+         1. border-width
+         2. border-style  => solid, dotted, double
+         3. border-color  */
+
+/* *Border Sides
+     to control an individual side of the box
+     1. border-left
+     2. border-right
+     3. border-top
+     4. border-bottom
+ */
+
+/* *   Border-radius
+          Used to round corners of elements outer border edge 
+          1.  border-top-right-radius: 25px;
+          2. border-top-left-radius: 25px;
+
+*/
+
+h1 {
+  border-width: 5px;
+  border-style: dashed;
+  border-color: purple;
+  border-radius: 20px;
+  text-align: center;
+}
+/* *    Padding Shorthand
+    1. for all 4 sides => padding: 50px; ***
+    2. top & bottom | left & right => padding: 1px 2px;
+    3. top | left & right | bottom => padding: 1px 2px 3px;
+    4. clockwise --> top | right | bottom | left => padding: 1px 2px 3px 4px; ***      */
+button {
+  border: 2px solid ;
+  border-radius: 10px;
+  /* padding-left: 25px;
+  padding-right: 25px; */
+  padding: 0px 25px 0px 25px;
+  background-color: yellow;
+}
+
+/* *  Margin
+         to set spacing on the outside of border
+            1. Margin-left
+            2. Margin-right
+            3. Margin-top
+            4. Margin-bottom  
+      shorthand =>  
+      1. for all 4 sides => margin: 50px; ***
+    2. top & bottom | left & right => margin: 1px 2px;
+    3. top | left & right | bottom => margin: 1px 2px 3px;
+    4. clockwise --> top | right | bottom | left => margin: 1px 2px 3px 4px; ***       */

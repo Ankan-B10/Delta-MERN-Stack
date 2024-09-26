@@ -1,0 +1,32 @@
+/* color property use in foreground styles */
+/* background-color property use in background styles */
+h1{
+    color: blueviolet;
+    background-color:black;
+}
+
+p{
+  color:red;
+  background-color: aqua;
+}
+button{
+    color:gold;
+    background-color: black;
+}
+/* *RGB Color Systems --> color=rgb(0,0,0);
+  Red, Green, Blue [(0-250),(0,250),(0,250)]
+  red = rgb(255,0,0)
+  green = rgb(0,255,0)
+  blue = rgb(0,0,255)
+  black = rgb(0,0,0)
+  white = rgb(255,255,255)
+  yellow = rgb(255,255,0)
+*/
+/* *Hexadecimal color system --> color=#FFFFFF;
+    letters: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F (16 letter)
+    ff = 255 in rgb
+    black = #000000
+    blue = #0000ff
+    yellow = #ffff00
+    white = #ffffff --> rgb(255,255,255)
+ */

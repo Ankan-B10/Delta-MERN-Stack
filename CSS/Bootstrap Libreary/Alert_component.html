@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="How_useBootstrap.css">
+</head>
+<body>
+    <a href="google.in" class="btn btn-dark">google search</a>
+    <h1>Components</h1>
+    <h2>Alert</h2>
+    <span class="bagdge bg-danger">new</span>
+    <h3>Notifications <span class="badge bg-primary rounded-pill">New 20+</span></h3>
+    <br>
+    <button class="btn btn-primary">
+        Followers
+        <span class="badge bg-danger rounded-pill">100+</span>
+    </button>
+    <br>
+    <div class="alert alert-danger">Download failed! Please try again</div>
+    <div class="alert alert-success alert-dismissible">Congratualtions! your score is 50/50
+        <!-- alert-dismissible use for adding extra padding -->
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+        <!-- class="btn-close"=>to create close button & data-bs-dismiss="alert"=>to add js function to close button -->
+    </div>
+    <!-- to include JavaScript file of bootstrap we include in body tag-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

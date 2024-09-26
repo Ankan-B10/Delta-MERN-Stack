@@ -1,0 +1,45 @@
+h3 {
+  color: red;
+}
+/* Ans 1 --> */
+#container {
+  height: 400px;
+  width: 400px;
+  border: 2px solid lightgreen;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: grey;
+  border: 2px solid black;
+  font-size: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Ans 2 --> */
+#navbar {
+  height: 50px;
+  width: 900px;
+  background-color: pink;
+  border: 2px solid lightgreen;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.option {
+  height: 50px;
+  width: 80px;
+  font-size: 24px;
+  margin-left: 5px;
+  line-height: 50px;
+}

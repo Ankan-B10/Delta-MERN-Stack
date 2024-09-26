@@ -1,0 +1,127 @@
+/* universal Selector */
+* {
+  text-decoration: none;
+}
+h3 {
+  color: purple;
+}
+h1 {
+  color: #b92b27;
+}
+#login {
+  background-color: white;
+}
+#signup {
+  background-color: #b92b27;
+  color: white;
+}
+/* class selector used  to add different elements/tags in one place and use same property*/
+.upvote {
+  background-color: green;
+  color: aliceblue;
+}
+
+/* * decendant selector */
+.post a {
+  color: purple;
+  background-color: yellow;
+}
+nav ul li a {
+  color: hotpink;
+}
+
+/* sibling combinator */
+p + h3 {
+  text-decoration: underline;
+}
+
+.upvote + button {
+  background-color: cornflowerblue;
+  color: brown;
+}
+
+/* Child combinator */
+div > input {
+  background-color: darksalmon;
+}
+
+/* Attribute selector */
+input[type="text"] {
+  color: green;
+}
+
+/* *Pseudo Class 
+A keyword added to a selector that specifies a special stste of the selected element*/
+/* :hover ---> */
+button:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+h3:hover {
+  text-decoration: none;
+}
+
+/* :active ---> clicked action*/
+button:active {
+  background-color: darkorange;
+  color: black;
+}
+p:active {
+  font-weight: bold;
+  color: purple;
+}
+
+/* :checked ---> */
+input[type="radio"]:checked + label {
+  color: red;
+  font-weight: bold;
+}
+
+/* :nth-of-type() ---> 
+      1. :nth-of-type(1) --> only changed position no 1
+      2. :nth-of-type(2) --> only changed position no 2
+      3. :nth-of-type(2n) --> only changed position no 2 , 4 , 6 , ...
+      4. :nth-of-type(1n) --> changed position no 1,2,3,4,5,...
+*/
+div:nth-of-type(2n) {
+  background-color: blanchedalmond;
+}
+
+/*   *Please go and explore Pseudo Class in google and implement   */
+
+/* *Pseudo Elements 
+     A keyword added to a selector that help to style a specific part
+       ::first-letter
+       ::first-line
+       ::selection
+*/
+h1::first-letter {
+  color: black;
+}
+p::first-line {
+  color: red;
+}
+p::selection {
+  background-color: rgb(147, 199, 58);
+}
+
+/* *CSS: Cascading Stylesheets --> 
+          it says for every same tags action only works in last tag
+          * it also works for css files last one prefer as main   */
+h3 {
+  background-color: yellow;
+}
+h3 {
+  background-color: aqua;
+}
+
+/* Selector Specificity
+   *   id > class > element 
+   example :  Class selector => .myclass:hover{} = (0 2 0) = 20 
+              id selector => #login{}  = (1 0 0) = 100    so, 100 > 20
+        if specifity same => cascading using
+*/
+
+/* Inline Specifity  => not using so much
+  *  inline(Html) > id > class > element
+ */

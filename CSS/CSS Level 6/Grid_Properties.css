@@ -1,0 +1,34 @@
+/* * Common Properties -->
+        1. horizontal  
+              justify-items (container)
+              justify-self (item)
+        2. vertical
+             align-items (container)
+             aligb-self  (item)       
+        3.
+            place-items (container)
+            place-self (item)                     */
+.container {
+  height: 400px;
+  width: 600px;
+  background-color: yellow;
+  display: inline-grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  /* justify-items: end;
+    align-items: center; */
+  place-items: center;
+}
+.item {
+  width: 100px;
+  height: 50px;
+  background-color: greenyellow;
+  border: 2px solid black;
+  text-align: center;
+}
+.one {
+  justify-self: start;
+  align-self: end;
+  place-self: start;
+}

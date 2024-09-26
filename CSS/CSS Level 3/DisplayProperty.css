@@ -1,0 +1,17 @@
+/* h2 {
+  display: inline;
+  background-color: pink;
+}
+span {
+  display: block;
+  background-color: greenyellow;
+} */
+
+span{
+    /* background-color: lime; */
+    border: 3px solid black;
+    height: 100px; /* not set */
+    width: 200px;  /* not set */
+    padding: 50px; /* only works in Left  Right */
+    margin: 20px;   /* only works in Left  Right */
+}

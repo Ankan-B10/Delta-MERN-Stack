@@ -1,0 +1,45 @@
+/* * Media Queries--> very important 
+            media features - width (of viewport / browser)*/
+
+h1 {
+  background-color: yellow;
+  border: 2px solid black;
+}
+p {
+  color: red;
+}
+
+@media (width: 400px) {
+  h1 {
+    background-color: red;
+    color: white;
+  }
+  p {
+    background-color: blue;
+  }
+}
+
+/* Main use -->
+      @media(min-width: 400px)
+      @media(min-width: 400px)
+         @media(min-width: 200px) and @media(max-width: 400px)*/
+
+    @media(max-width:400px){
+        h1{
+            background-color: green;
+        }
+    }
+    @media(max-width:300px)and (main-width:200px){
+        h1{
+            background-color: magenta;
+        }
+    }  
+
+/* orientation (of viewport) 
+        @media(orientation: landscape)  */
+
+@media(orientation: landscape){
+    h1{
+        background-color: aqua;
+    }
+}

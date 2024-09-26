@@ -1,0 +1,19 @@
+div{
+    background-color: aquamarine;
+}
+
+form{
+    background-color: pink;
+}
+input{
+    background-color: inherit;
+     /* to make button color as parents bg color */
+}
+button{
+    background-color: inherit;
+    /* to make button color as parents bg color */
+}
+button:hover{
+    background-color: red;
+    color: white;
+}

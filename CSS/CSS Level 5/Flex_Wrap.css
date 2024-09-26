@@ -1,0 +1,27 @@
+/* * Flex-Wrap
+       flex-wrap: nowrap; --> (Default)
+       flex-wrap: wrap; --> (Wrap all elements with their width and height)
+       flex-wrap: wrap-reverse;
+*/
+
+#container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  display: flex; /* Default flex -> Row wise*/
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap-reverse;
+}
+h1 {
+  text-align: center;
+}
+#container div {
+  height: 100px;
+  width: 400px;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}

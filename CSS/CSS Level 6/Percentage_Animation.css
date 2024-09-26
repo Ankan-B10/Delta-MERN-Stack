@@ -1,0 +1,22 @@
+/* animation: myName 2s linear 3s infinite normal */
+.box {
+  width: 300px;
+  height: 100px;
+  animation: widthAnimate 3s ease-in 0s infinite normal;
+}
+
+@keyframes widthAnimate {
+  0% {
+    background-color: green;
+    width: 10px;
+  }
+  50% {
+    background-color: yellow;
+    width: 300px;
+  }
+  100% {
+    background-color: blue;
+    width: 500px;
+  }
+}
+

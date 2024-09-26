@@ -1,0 +1,20 @@
+/* Grid template --->
+    they define the lines & track sizing
+        grid-template-rows: 100px 100px; =>(only works first two rows)   
+        grid-template-columns: 100px 100px 100px; =>(only works first three columns)      */
+
+.container{
+     height: 300px;
+     width: 600px;
+     background-color: yellow;
+     display: grid;
+     grid-template-rows: 50px 50px 50px 50px 50px;
+     grid-template-columns: 200px 200px 200px;
+}
+.item {
+    /* width: 100px;
+    height: 50px; */
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
