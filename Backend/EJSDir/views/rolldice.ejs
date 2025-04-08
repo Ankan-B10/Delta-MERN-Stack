@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roll Dice Game</title>
+  </head>
+  <body>
+    <!-- <h1>Dice gave value: <%= Math.floor(Math.random()*6) + 1 %></h1>-->
+
+    <!-- or we can simply implement Math in the index.js -->
+    <h1>Dice gave value: <%= diceVal %></h1>
+
+    <!-- condition in EJS -->
+    <!-- Js part inside of ejs -->
+    <% if(diceVal == 6){ %>
+    <h2>Nice! Roll dice again.</h2>
+    <% } %>
+  </body>
+</html>
