@@ -2,7 +2,7 @@
 
 Welcome to the **Delta MERN Stack** repository!  
 
-This project contains my notes, classwork, and code implementations from the **Delta Web Development Course** by [Shradha Khapra](https://www.linkedin.com/in/shradhakhapra/), a well-known educator and mentor in the programming community.
+This project contains my notes, classwork, and code implementations from the **Delta Web Development Course** by [Shradha Khapra](https://www.instagram.com/shradhakhapra/?hl=en), a well-known educator and mentor in the programming community.
 
 ---
 
