@@ -12,20 +12,6 @@ The **Delta Web Dev Course** is a full-fledged, hands-on course designed to teac
 
 ---
 
-## 🧠 What You'll Find in This Repo
-
-This repo is structured by topics as they were covered in class:
-
-
-## 📁 1-Notes → Personal notes from each session
-## 📁 Backend → Node.js, Express.js, MongoDB, CRUD APIs
-## 📁 CSS → CSS classes, layout exercises
-## 📁 HTML → HTML basics and templates
-## 📁 JavaScript → JS logic building and DOM manipulation
-## 📁 React JS → React components, props, state, etc.
-
----
-
 ## 🛠️ Tech Stack
 
 ## **Frontend**: HTML, CSS, JavaScript, React.js  
