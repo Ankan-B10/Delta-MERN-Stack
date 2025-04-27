@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>My WhatsApp</header>
+
+    <div class="container">
+      <form method="GET" action="/chats/new" class="new-chat-form">
+        <button class="new-chat-btn">➕ New Chat</button>
+      </form>
+
+      <h2 style="margin-top: 20px">All Chats:</h2>
+
+      <% for(let chat of chats) { %>
+      <div class="chat">
+        <div class="chat-header">
+          <p><b>From:</b> <%= chat.from %></p>
+          <p><b>To:</b> <%= chat.to %></p>
+        </div>
+
+        <div class="msg">
+          <p><%= chat.msg %></p>
+        </div>
+
+        <div class="actions">
+          <!-- Edit route form -->
+          <form
+            method="GET"
+            action="/chats/<%= chat._id %>/edit"
+            class="action-form"
+          >
+            <button class="edit-btn">Edit</button>
+          </form>
+
+          <!-- Delete route form -->
+          <form
+            method="POST"
+            action="/chats/<%= chat._id %>?_method=DELETE"
+            class="action-form"
+          >
+            <button class="delete-btn">Delete</button>
+          </form>
+        </div>
+
+        <div class="timestamp">
+          <p><b>Time:</b> <%= chat.created_at.toString().split(" ")[4] %></p>
+          <p>
+            <b>Date:</b> <%= chat.created_at.toString().split(" ").slice(0,
+            4).join("-") %>
+          </p>
+        </div>
+      </div>
+      <% } %>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
