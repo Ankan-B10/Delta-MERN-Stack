@@ -72,6 +72,7 @@ app.get("/chats/:id/edit", async (req, res) => {
 app.put("/chats/:id", async (req, res) => {
   let { id } = req.params; //id extract
   let { msg: newMsg } = req.body;
+  newMsg = newMsg.trim();
   // console.log(newMsg);
   let updtedChat = await Chat.findByIdAndUpdate(
     //fully change in db also
@@ -106,7 +107,8 @@ app.delete("/chats/:id", async (req, res) => {
 
 // route create
 app.get("/", (req, res) => {
-  res.send("root is working");
+  // res.send("root is working");
+  res.render("home.ejs");
 });
 
 app.listen(8080, () => {

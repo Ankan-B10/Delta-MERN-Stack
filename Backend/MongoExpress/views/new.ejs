@@ -3,18 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Write new Chat</title>
+    <title>Write New Chat</title>
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #e5ddd5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .form-container {
+        background-color: #ffffff;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        text-align: center;
+      }
+      h3 {
+        color: #075e54;
+        margin-bottom: 20px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 16px;
+      }
+      textarea {
+        resize: none;
+        height: 120px;
+      }
+      button {
+        background-color: #25d366;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 15px;
+      }
+      button:hover {
+        background-color: #128c7e;
+      }
+    </style>
   </head>
   <body>
-    <h3>Write new Chat ...</h3>
-    <form method="POST" action="/chats">
-      <input type="text" placeholder="who are you" name="from" />
-      <br /><br />
-      <textarea name="msg" placeholder="Write your message here ..."></textarea>
-      <br /><br />
-      <input type="text" placeholder="add receiver" name="to" />
-      <br /><br />
-      <button>Create chat</button>
-    </form>
+    <div class="form-container">
+      <h3>Write a New Chat</h3>
+      <form method="POST" action="/chats">
+        <input type="text" placeholder="Who are you?" name="from" required />
+        <textarea
+          name="msg"
+          placeholder="Write your message here..."
+          required
+        ></textarea>
+        <input type="text" placeholder="Add receiver" name="to" required />
+        <button>Create Chat</button>
+      </form>
+    </div>
   </body>
 </html>
