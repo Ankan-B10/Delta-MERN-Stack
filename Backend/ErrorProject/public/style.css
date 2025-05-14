@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e5ddd5;
+}
+
+/* Header */
+header {
+  background-color: #075e54;
+  color: white;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* New chat button */
+.new-chat-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.new-chat-btn {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Chat box */
+.chat {
+  background-color: #dcf8c6;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+/* From and To */
+.chat-header p {
+  margin: 5px 0;
+  color: #075e54;
+}
+
+/* Message bubble */
+.msg {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 7.5px;
+  margin: 10px 0;
+}
+
+/* Actions: Edit/Delete */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.action-form {
+  display: inline;
+}
+
+.edit-btn {
+  background-color: #34b7f1;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Timestamp */
+.timestamp {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #555;
+  text-align: right;
+}
